@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap rescap build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  <!--
+    ESTE ARCHIVO DE MANIFIESTO DEL PAQUETE SE GENERA MEDIANTE EL PROCESO DE COMPILACIÓN.
+
+    Los cambios realizados en el archivo se perderán al regenerarlo. Para corregir los errores de este archivo, edite el archivo de origen .appxmanifest.
+
+    Para obtener más información acerca de los archivos de manifiesto del paquete, vea http://go.microsoft.com/fwlink/?LinkID=241727
+  -->
+  <Identity Name="82D57A91-4788-4329-A27B-168BB25CAFFC" Publisher="O=UnoQuickStart" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Properties>
+    <DisplayName>UnoQuickStart</DisplayName>
+    <PublisherDisplayName>UnoQuickStart</PublisherDisplayName>
+    <Logo>Images\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.18362.0" MaxVersionTested="10.0.19041.0" />
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.18362.0" MaxVersionTested="10.0.19041.0" />
+    <PackageDependency Name="Microsoft.WindowsAppRuntime.1.1" MinVersion="1000.516.2156.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="EN-US" />
+    <Resource Language="EN" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="GameDB.Windows.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="UnoQuickStart" Description="UnoQuickStart" BackgroundColor="transparent" Square150x150Logo="Images\Square150x150Logo.png" Square44x44Logo="Images\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
+        <uap:SplashScreen Image="Images\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="Microsoft.UI.Xaml.Markup.Compiler.dll" Version="1.0.0.0" />
+    <build:Item Name="makepri.exe" Version="10.0.22000.194 (WinBuild.160101.0800)" />
+  </build:Metadata>
+</Package>

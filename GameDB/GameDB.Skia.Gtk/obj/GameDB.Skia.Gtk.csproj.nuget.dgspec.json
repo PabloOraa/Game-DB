@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\pabli\\source\\repos\\GameDB\\GameDB\\GameDB.Skia.Gtk\\GameDB.Skia.Gtk.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\pabli\\source\\repos\\GameDB\\GameDB\\GameDB.Skia.Gtk\\GameDB.Skia.Gtk.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pabli\\source\\repos\\GameDB\\GameDB\\GameDB.Skia.Gtk\\GameDB.Skia.Gtk.csproj",
+        "projectName": "GameDB.Skia.Gtk",
+        "projectPath": "C:\\Users\\pabli\\source\\repos\\GameDB\\GameDB\\GameDB.Skia.Gtk\\GameDB.Skia.Gtk.csproj",
+        "packagesPath": "C:\\Users\\pabli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pabli\\source\\repos\\GameDB\\GameDB\\GameDB.Skia.Gtk\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pabli\\source\\repos\\GameDB\\NuGet.Config",
+          "C:\\Users\\pabli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/azure-public/vside/_packaging/xamarin-impl/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet6/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[4.4.20, )"
+            },
+            "Uno.WinUI.RemoteControl": {
+              "target": "Package",
+              "version": "[4.4.20, )"
+            },
+            "Uno.WinUI.Skia.Gtk": {
+              "target": "Package",
+              "version": "[4.4.20, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

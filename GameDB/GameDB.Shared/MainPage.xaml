@@ -5,10 +5,10 @@
     xmlns:local="using:GameDB"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"    
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
 
     <Grid>
         <TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
+        <Button Content="Convert JSON" Click="Button_Click"></Button>
     </Grid>
 </Page>

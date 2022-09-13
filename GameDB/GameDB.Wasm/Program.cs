@@ -1,4 +1,6 @@
-﻿using Microsoft.UI.Xaml;
+﻿#nullable disable
+
+using Microsoft.UI.Xaml;
 using System;
 
 namespace GameDB.Wasm

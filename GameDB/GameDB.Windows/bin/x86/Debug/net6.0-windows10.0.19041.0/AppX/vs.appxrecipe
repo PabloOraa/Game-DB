@@ -29,29 +29,29 @@
     <AppXManifest Include="C:\Users\pabli\source\repos\GameDB\GameDB\GameDB.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-09-13T19:55:32.657</Modified>
+      <Modified>2022-09-13T23:48:59.628</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\pabli\source\repos\GameDB\GameDB\GameDB.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-09-13T19:55:32.573</Modified>
+      <Modified>2022-09-13T23:48:59.587</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pabli\source\repos\GameDB\GameDB\GameDB.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\GameDB.Windows.runtimeconfig.json">
       <PackagePath>GameDB.Windows.runtimeconfig.json</PackagePath>
-      <Modified>2022-09-13T11:57:28.104</Modified>
+      <Modified>2022-09-13T23:42:08.588</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pabli\source\repos\GameDB\GameDB\GameDB.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\GameDB.Windows.dll">
       <PackagePath>GameDB.Windows.dll</PackagePath>
-      <Modified>2022-09-13T19:55:32.423</Modified>
+      <Modified>2022-09-13T23:48:59.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pabli\source\repos\GameDB\GameDB\GameDB.Windows\obj\x86\Debug\net6.0-windows10.0.19041.0\apphost.exe">
       <PackagePath>GameDB.Windows.exe</PackagePath>
-      <Modified>2022-09-13T19:55:32.440</Modified>
+      <Modified>2022-09-13T23:48:59.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pabli\source\repos\GameDB\GameDB\GameDB.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\GameDB.Windows.deps.json">
       <PackagePath>GameDB.Windows.deps.json</PackagePath>
-      <Modified>2022-09-13T18:52:21.530</Modified>
+      <Modified>2022-09-13T23:42:08.471</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pabli\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.22000.25\lib\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

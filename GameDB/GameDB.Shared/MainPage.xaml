@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid>
-        <TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
+        <TextBlock x:Name="textBlock" Text="Hello, world!" Margin="20" FontSize="30" />
         <Button Content="Convert JSON" Click="Button_Click"></Button>
     </Grid>
 </Page>

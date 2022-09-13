@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "GameDB.Windows": {
+      "commandName": "MsixPackage"
+    }
+  }
+}

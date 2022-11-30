@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VDUzl80OjTeD0zPzagCXFsPThvrzmu9qmcumeQmtxKPr6zx9nKfUUg9jMc8V9z+qgn/HMZ+Yf+hVPAYeJaK2fQ==",
+  "dgSpecHash": "TsttKHoMluYr64PfwDdUDOlm9PN38JUmFk/VjeWrexvWu+9NaFytak+RIViP//K7/OmzJ6wqsnMSfN29QLMVoQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\pabli\\source\\repos\\GameDB\\GameDB\\GameDB.Windows\\GameDB.Windows.csproj",
   "expectedPackageFiles": [
@@ -20,16 +20,16 @@
     "C:\\Users\\pabli\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22000.196\\microsoft.windows.sdk.buildtools.10.0.22000.196.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\microsoft.windowsappsdk\\1.1.0\\microsoft.windowsappsdk.1.1.0.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\uno.core.extensions.logging.singleton\\4.0.1\\uno.core.extensions.logging.singleton.4.0.1.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.8\\microsoft.netcore.app.runtime.win-x64.6.0.8.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.8\\microsoft.aspnetcore.app.runtime.win-x64.6.0.8.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\6.0.8\\microsoft.netcore.app.runtime.win-arm64.6.0.8.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.8\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.8.nupkg.sha512",
+    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.11\\microsoft.netcore.app.runtime.win-x86.6.0.11.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22000.25\\microsoft.windows.sdk.net.ref.10.0.22000.25.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\6.0.8\\microsoft.aspnetcore.app.runtime.win-arm64.6.0.8.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.8\\microsoft.netcore.app.runtime.win-x86.6.0.8.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\6.0.8\\microsoft.windowsdesktop.app.runtime.win-arm64.6.0.8.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.8\\microsoft.aspnetcore.app.runtime.win-x86.6.0.8.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.8\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.8.nupkg.sha512"
+    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.11\\microsoft.aspnetcore.app.runtime.win-x86.6.0.11.nupkg.sha512",
+    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\6.0.11\\microsoft.netcore.app.runtime.win-arm64.6.0.11.nupkg.sha512",
+    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.11\\microsoft.aspnetcore.app.runtime.win-x64.6.0.11.nupkg.sha512",
+    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\6.0.11\\microsoft.windowsdesktop.app.runtime.win-arm64.6.0.11.nupkg.sha512",
+    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.11\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.11.nupkg.sha512",
+    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\6.0.11\\microsoft.aspnetcore.app.runtime.win-arm64.6.0.11.nupkg.sha512",
+    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.11\\microsoft.netcore.app.runtime.win-x64.6.0.11.nupkg.sha512",
+    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.11\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.11.nupkg.sha512"
   ],
   "logs": []
 }

@@ -29,12 +29,17 @@
     <AppXManifest Include="C:\Users\pabli\source\repos\GameDB\GameDB\GameDB.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+<<<<<<< Updated upstream
       <Modified>2022-09-13T11:57:28.583</Modified>
+=======
+      <Modified>2022-11-30T21:55:47.771</Modified>
+>>>>>>> Stashed changes
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\pabli\source\repos\GameDB\GameDB\GameDB.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\resources.pri">
       <PackagePath>resources.pri</PackagePath>
+<<<<<<< Updated upstream
       <Modified>2022-09-13T11:57:28.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pabli\source\repos\GameDB\GameDB\GameDB.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\GameDB.Windows.runtimeconfig.json">
@@ -52,6 +57,25 @@
     <AppxPackagedFile Include="C:\Users\pabli\source\repos\GameDB\GameDB\GameDB.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\GameDB.Windows.deps.json">
       <PackagePath>GameDB.Windows.deps.json</PackagePath>
       <Modified>2022-09-13T11:57:27.982</Modified>
+=======
+      <Modified>2022-11-30T21:55:47.637</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pabli\source\repos\GameDB\GameDB\GameDB.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\GameDB.Windows.runtimeconfig.json">
+      <PackagePath>GameDB.Windows.runtimeconfig.json</PackagePath>
+      <Modified>2022-11-30T21:55:47.309</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pabli\source\repos\GameDB\GameDB\GameDB.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\GameDB.Windows.dll">
+      <PackagePath>GameDB.Windows.dll</PackagePath>
+      <Modified>2022-11-30T21:55:46.761</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pabli\source\repos\GameDB\GameDB\GameDB.Windows\obj\x86\Debug\net6.0-windows10.0.19041.0\apphost.exe">
+      <PackagePath>GameDB.Windows.exe</PackagePath>
+      <Modified>2022-11-30T21:55:46.794</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pabli\source\repos\GameDB\GameDB\GameDB.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\GameDB.Windows.deps.json">
+      <PackagePath>GameDB.Windows.deps.json</PackagePath>
+      <Modified>2022-11-30T21:55:47.126</Modified>
+>>>>>>> Stashed changes
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pabli\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.22000.25\lib\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

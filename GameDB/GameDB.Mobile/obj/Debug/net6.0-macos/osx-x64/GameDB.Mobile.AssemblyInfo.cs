@@ -18,8 +18,8 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyProductAttribute("GameDB.Mobile")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameDB.Mobile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
-[assembly: System.Runtime.Versioning.TargetPlatformAttribute("macOS12.3")]
-[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("macOS10.14")]
+[assembly: System.Runtime.Versioning.TargetPlatformAttribute("macos0.0")]
+[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("macos10.14")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
 

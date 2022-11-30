@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dVr/JekMa+bal9B+mg+Tn2Z2R6bo/HK5WtWDpIvdUU+eJcRFlynoi+6plpGHllLfy3wbiwENN671FUYaLGaH/A==",
+  "dgSpecHash": "HSnWRbp3VzZK9cq61H4zx+9y6z0f8FbLtC8Rgk+Gufwcj5d9fC2P7x66zete6IiHc7OQ0mBCPcFQ8JmJ0lupAg==",
   "success": true,
   "projectFilePath": "C:\\Users\\pabli\\source\\repos\\GameDB\\GameDB\\GameDB.Mobile\\GameDB.Mobile.csproj",
   "expectedPackageFiles": [
@@ -29,12 +29,12 @@
     "C:\\Users\\pabli\\.nuget\\packages\\uno.core.extensions.logging.singleton\\4.0.0-dev.7\\uno.core.extensions.logging.singleton.4.0.0-dev.7.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\uno.diagnostics.eventing\\2.0.1\\uno.diagnostics.eventing.2.0.1.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\uno.extensions.logging.oslog\\1.4.0\\uno.extensions.logging.oslog.1.4.0.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\uno.foundation.logging\\4.4.20\\uno.foundation.logging.4.4.20.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\uno.sourcegenerationtasks\\4.1.0\\uno.sourcegenerationtasks.4.1.0.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\uno.ui.adapter.microsoft.extensions.logging\\4.4.20\\uno.ui.adapter.microsoft.extensions.logging.4.4.20.nupkg.sha512",
+    "C:\\Users\\pabli\\.nuget\\packages\\uno.foundation.logging\\4.6.19\\uno.foundation.logging.4.6.19.nupkg.sha512",
+    "C:\\Users\\pabli\\.nuget\\packages\\uno.sourcegenerationtasks\\4.2.0-dev.6\\uno.sourcegenerationtasks.4.2.0-dev.6.nupkg.sha512",
+    "C:\\Users\\pabli\\.nuget\\packages\\uno.ui.adapter.microsoft.extensions.logging\\4.6.19\\uno.ui.adapter.microsoft.extensions.logging.4.6.19.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\uno.universalimageloader\\1.9.36\\uno.universalimageloader.1.9.36.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\uno.winui\\4.4.20\\uno.winui.4.4.20.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\uno.winui.remotecontrol\\4.4.20\\uno.winui.remotecontrol.4.4.20.nupkg.sha512",
+    "C:\\Users\\pabli\\.nuget\\packages\\uno.winui\\4.6.19\\uno.winui.4.6.19.nupkg.sha512",
+    "C:\\Users\\pabli\\.nuget\\packages\\uno.winui.remotecontrol\\4.6.19\\uno.winui.remotecontrol.4.6.19.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\xamarin.androidx.activity\\1.3.1.2\\xamarin.androidx.activity.1.3.1.2.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.3\\xamarin.androidx.annotation.1.2.0.3.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\xamarin.androidx.annotation.experimental\\1.1.0.3\\xamarin.androidx.annotation.experimental.1.1.0.3.nupkg.sha512",
@@ -43,6 +43,7 @@
     "C:\\Users\\pabli\\.nuget\\packages\\xamarin.androidx.arch.core.common\\2.1.0.11\\xamarin.androidx.arch.core.common.2.1.0.11.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\xamarin.androidx.arch.core.runtime\\2.1.0.11\\xamarin.androidx.arch.core.runtime.2.1.0.11.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\xamarin.androidx.asynclayoutinflater\\1.0.0.10\\xamarin.androidx.asynclayoutinflater.1.0.0.10.nupkg.sha512",
+    "C:\\Users\\pabli\\.nuget\\packages\\xamarin.androidx.browser\\1.0.0\\xamarin.androidx.browser.1.0.0.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\xamarin.androidx.cardview\\1.0.0.11\\xamarin.androidx.cardview.1.0.0.11.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\xamarin.androidx.collection\\1.1.0.10\\xamarin.androidx.collection.1.1.0.10.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\xamarin.androidx.constraintlayout\\2.1.1.2\\xamarin.androidx.constraintlayout.2.1.1.2.nupkg.sha512",
@@ -79,12 +80,7 @@
     "C:\\Users\\pabli\\.nuget\\packages\\xamarin.androidx.versionedparcelable\\1.1.1.10\\xamarin.androidx.versionedparcelable.1.1.1.10.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\xamarin.androidx.viewpager\\1.0.0.10\\xamarin.androidx.viewpager.1.0.0.10.nupkg.sha512",
     "C:\\Users\\pabli\\.nuget\\packages\\xamarin.androidx.viewpager2\\1.0.0.12\\xamarin.androidx.viewpager2.1.0.0.12.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.4\\xamarin.google.android.material.1.4.0.4.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\6.0.8\\microsoft.netcore.app.host.linux-x64.6.0.8.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.netcore.app.host.linux-arm64\\6.0.8\\microsoft.netcore.app.host.linux-arm64.6.0.8.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.netcore.app.host.linux-arm\\6.0.8\\microsoft.netcore.app.host.linux-arm.6.0.8.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.netcore.app.runtime.osx-x64\\6.0.8\\microsoft.netcore.app.runtime.osx-x64.6.0.8.nupkg.sha512",
-    "C:\\Users\\pabli\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.osx-x64\\6.0.8\\microsoft.aspnetcore.app.runtime.osx-x64.6.0.8.nupkg.sha512"
+    "C:\\Users\\pabli\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.4\\xamarin.google.android.material.1.4.0.4.nupkg.sha512"
   ],
   "logs": []
 }

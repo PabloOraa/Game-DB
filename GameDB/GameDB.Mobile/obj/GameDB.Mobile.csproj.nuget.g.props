@@ -7,26 +7,18 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\pabli\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.3.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\pabli\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0-android' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui\4.4.20</PkgUno_WinUI>
-    <PkgUno_WinUI_RemoteControl Condition=" '$(PkgUno_WinUI_RemoteControl)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui.remotecontrol\4.4.20</PkgUno_WinUI_RemoteControl>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net7.0-android' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui\4.6.19</PkgUno_WinUI>
+    <PkgUno_WinUI_RemoteControl Condition=" '$(PkgUno_WinUI_RemoteControl)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui.remotecontrol\4.6.19</PkgUno_WinUI_RemoteControl>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0-ios' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui\4.4.20</PkgUno_WinUI>
-    <PkgUno_WinUI_RemoteControl Condition=" '$(PkgUno_WinUI_RemoteControl)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui.remotecontrol\4.4.20</PkgUno_WinUI_RemoteControl>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0-maccatalyst' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui\4.4.20</PkgUno_WinUI>
-    <PkgUno_WinUI_RemoteControl Condition=" '$(PkgUno_WinUI_RemoteControl)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui.remotecontrol\4.4.20</PkgUno_WinUI_RemoteControl>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0-macos' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui\4.4.20</PkgUno_WinUI>
-    <PkgUno_WinUI_RemoteControl Condition=" '$(PkgUno_WinUI_RemoteControl)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui.remotecontrol\4.4.20</PkgUno_WinUI_RemoteControl>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net7.0-ios' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui\4.6.19</PkgUno_WinUI>
+    <PkgUno_WinUI_RemoteControl Condition=" '$(PkgUno_WinUI_RemoteControl)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui.remotecontrol\4.6.19</PkgUno_WinUI_RemoteControl>
   </PropertyGroup>
 </Project>

@@ -24,10 +24,8 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-android",
-          "net6.0-ios",
-          "net6.0-maccatalyst",
-          "net6.0-macos"
+          "net7.0-android",
+          "net7.0-ios"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -38,20 +36,12 @@
           "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet6/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0-android31.0": {
-            "targetAlias": "net6.0-android",
+          "net7.0-android33.0": {
+            "targetAlias": "net7.0-android",
             "projectReferences": {}
           },
-          "net6.0-ios15.4": {
-            "targetAlias": "net6.0-ios",
-            "projectReferences": {}
-          },
-          "net6.0-maccatalyst15.4": {
-            "targetAlias": "net6.0-maccatalyst",
-            "projectReferences": {}
-          },
-          "net6.0-macos12.3": {
-            "targetAlias": "net6.0-macos",
+          "net7.0-ios16.0": {
+            "targetAlias": "net7.0-ios",
             "projectReferences": {}
           }
         },
@@ -62,8 +52,8 @@
         }
       },
       "frameworks": {
-        "net6.0-android31.0": {
-          "targetAlias": "net6.0-android",
+        "net7.0-android33.0": {
+          "targetAlias": "net7.0-android",
           "dependencies": {
             "Microsoft.Extensions.Logging": {
               "target": "Package",
@@ -75,7 +65,7 @@
             },
             "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[4.4.20, )"
+              "version": "[4.6.19, )"
             },
             "Uno.UniversalImageLoader": {
               "target": "Package",
@@ -83,11 +73,11 @@
             },
             "Uno.WinUI": {
               "target": "Package",
-              "version": "[4.4.20, )"
+              "version": "[4.6.19, )"
             },
             "Uno.WinUI.RemoteControl": {
               "target": "Package",
-              "version": "[4.4.20, )"
+              "version": "[4.6.19, )"
             },
             "Xamarin.Google.Android.Material": {
               "target": "Package",
@@ -105,20 +95,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-arm",
-              "version": "[6.0.8, 6.0.8]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-arm64",
-              "version": "[6.0.8, 6.0.8]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[6.0.8, 6.0.8]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.Android": {
               "privateAssets": "all"
@@ -127,10 +103,10 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         },
-        "net6.0-ios15.4": {
-          "targetAlias": "net6.0-ios",
+        "net7.0-ios16.0": {
+          "targetAlias": "net7.0-ios",
           "dependencies": {
             "Microsoft.Extensions.Logging": {
               "target": "Package",
@@ -140,26 +116,21 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
-            "System.Runtime.InteropServices.NFloat.Internal": {
-              "target": "Package",
-              "version": "[6.0.1, )",
-              "autoReferenced": true
-            },
             "Uno.Extensions.Logging.OSLog": {
               "target": "Package",
               "version": "[1.4.0, )"
             },
             "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[4.4.20, )"
+              "version": "[4.6.19, )"
             },
             "Uno.WinUI": {
               "target": "Package",
-              "version": "[4.4.20, )"
+              "version": "[4.6.19, )"
             },
             "Uno.WinUI.RemoteControl": {
               "target": "Package",
-              "version": "[4.4.20, )"
+              "version": "[4.6.19, )"
             }
           },
           "imports": [
@@ -181,122 +152,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
-        },
-        "net6.0-maccatalyst15.4": {
-          "targetAlias": "net6.0-maccatalyst",
-          "dependencies": {
-            "Microsoft.Extensions.Logging": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "Microsoft.Extensions.Logging.Console": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "System.Runtime.InteropServices.NFloat.Internal": {
-              "target": "Package",
-              "version": "[6.0.1, )",
-              "autoReferenced": true
-            },
-            "Uno.Extensions.Logging.OSLog": {
-              "target": "Package",
-              "version": "[1.4.0, )"
-            },
-            "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
-              "target": "Package",
-              "version": "[4.4.20, )"
-            },
-            "Uno.WinUI": {
-              "target": "Package",
-              "version": "[4.4.20, )"
-            },
-            "Uno.WinUI.RemoteControl": {
-              "target": "Package",
-              "version": "[4.4.20, )"
-            }
-          },
-          "imports": [
-            "xamarinios10",
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.MacCatalyst": {
-              "privateAssets": "all"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
-        },
-        "net6.0-macos12.3": {
-          "targetAlias": "net6.0-macos",
-          "dependencies": {
-            "Microsoft.Extensions.Logging": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "Microsoft.Extensions.Logging.Console": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "System.Runtime.InteropServices.NFloat.Internal": {
-              "target": "Package",
-              "version": "[6.0.1, )",
-              "autoReferenced": true
-            },
-            "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
-              "target": "Package",
-              "version": "[4.4.20, )"
-            },
-            "Uno.WinUI": {
-              "target": "Package",
-              "version": "[4.4.20, )"
-            },
-            "Uno.WinUI.RemoteControl": {
-              "target": "Package",
-              "version": "[4.4.20, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.osx-x64",
-              "version": "[6.0.8, 6.0.8]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.osx-x64",
-              "version": "[6.0.8, 6.0.8]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.macOS": {
-              "privateAssets": "all"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -313,12 +169,6 @@
           "#import": []
         },
         "iossimulator-x64": {
-          "#import": []
-        },
-        "maccatalyst-x64": {
-          "#import": []
-        },
-        "osx-x64": {
           "#import": []
         }
       }

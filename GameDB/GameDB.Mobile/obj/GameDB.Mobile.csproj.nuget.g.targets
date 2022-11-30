@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-android' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net7.0-android' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)xamarin.androidx.annotation\1.2.0.3\buildTransitive\net6.0-android31.0\Xamarin.AndroidX.Annotation.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.androidx.annotation\1.2.0.3\buildTransitive\net6.0-android31.0\Xamarin.AndroidX.Annotation.targets')" />
     <Import Project="$(NuGetPackageRoot)xamarin.androidx.collection\1.1.0.10\buildTransitive\net6.0-android31.0\Xamarin.AndroidX.Collection.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.androidx.collection\1.1.0.10\buildTransitive\net6.0-android31.0\Xamarin.AndroidX.Collection.targets')" />
     <Import Project="$(NuGetPackageRoot)xamarin.androidx.versionedparcelable\1.1.1.10\buildTransitive\net6.0-android31.0\Xamarin.AndroidX.VersionedParcelable.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.androidx.versionedparcelable\1.1.1.10\buildTransitive\net6.0-android31.0\Xamarin.AndroidX.VersionedParcelable.targets')" />
@@ -46,23 +46,14 @@
     <Import Project="$(NuGetPackageRoot)xamarin.androidx.asynclayoutinflater\1.0.0.10\buildTransitive\net6.0-android31.0\Xamarin.AndroidX.AsyncLayoutInflater.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.androidx.asynclayoutinflater\1.0.0.10\buildTransitive\net6.0-android31.0\Xamarin.AndroidX.AsyncLayoutInflater.targets')" />
     <Import Project="$(NuGetPackageRoot)xamarin.androidx.legacy.support.core.ui\1.0.0.11\buildTransitive\net6.0-android31.0\Xamarin.AndroidX.Legacy.Support.Core.UI.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.androidx.legacy.support.core.ui\1.0.0.11\buildTransitive\net6.0-android31.0\Xamarin.AndroidX.Legacy.Support.Core.UI.targets')" />
     <Import Project="$(NuGetPackageRoot)xamarin.androidx.legacy.support.v4\1.0.0.10\buildTransitive\net6.0-android31.0\Xamarin.AndroidX.Legacy.Support.V4.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.androidx.legacy.support.v4\1.0.0.10\buildTransitive\net6.0-android31.0\Xamarin.AndroidX.Legacy.Support.V4.targets')" />
-    <Import Project="$(NuGetPackageRoot)uno.sourcegenerationtasks\4.1.0\build\netstandard1.0\Uno.SourceGenerationTasks.targets" Condition="Exists('$(NuGetPackageRoot)uno.sourcegenerationtasks\4.1.0\build\netstandard1.0\Uno.SourceGenerationTasks.targets')" />
-    <Import Project="$(NuGetPackageRoot)uno.winui\4.4.20\buildTransitive\net6.0-android30.0\uno.winui.targets" Condition="Exists('$(NuGetPackageRoot)uno.winui\4.4.20\buildTransitive\net6.0-android30.0\uno.winui.targets')" />
-    <Import Project="$(NuGetPackageRoot)uno.winui.remotecontrol\4.4.20\buildTransitive\Uno.WinUI.RemoteControl.targets" Condition="Exists('$(NuGetPackageRoot)uno.winui.remotecontrol\4.4.20\buildTransitive\Uno.WinUI.RemoteControl.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.androidx.browser\1.0.0\buildTransitive\monoandroid90\Xamarin.AndroidX.Browser.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.androidx.browser\1.0.0\buildTransitive\monoandroid90\Xamarin.AndroidX.Browser.targets')" />
+    <Import Project="$(NuGetPackageRoot)uno.sourcegenerationtasks\4.2.0-dev.6\build\netstandard1.0\Uno.SourceGenerationTasks.targets" Condition="Exists('$(NuGetPackageRoot)uno.sourcegenerationtasks\4.2.0-dev.6\build\netstandard1.0\Uno.SourceGenerationTasks.targets')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui\4.6.19\buildTransitive\net7.0-android30.0\uno.winui.targets" Condition="Exists('$(NuGetPackageRoot)uno.winui\4.6.19\buildTransitive\net7.0-android30.0\uno.winui.targets')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.remotecontrol\4.6.19\buildTransitive\Uno.WinUI.RemoteControl.targets" Condition="Exists('$(NuGetPackageRoot)uno.winui.remotecontrol\4.6.19\buildTransitive\Uno.WinUI.RemoteControl.targets')" />
   </ImportGroup>
-  <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-ios' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)uno.sourcegenerationtasks\4.1.0\build\netstandard1.0\Uno.SourceGenerationTasks.targets" Condition="Exists('$(NuGetPackageRoot)uno.sourcegenerationtasks\4.1.0\build\netstandard1.0\Uno.SourceGenerationTasks.targets')" />
-    <Import Project="$(NuGetPackageRoot)uno.winui\4.4.20\buildTransitive\net6.0-ios\uno.winui.targets" Condition="Exists('$(NuGetPackageRoot)uno.winui\4.4.20\buildTransitive\net6.0-ios\uno.winui.targets')" />
-    <Import Project="$(NuGetPackageRoot)uno.winui.remotecontrol\4.4.20\buildTransitive\Uno.WinUI.RemoteControl.targets" Condition="Exists('$(NuGetPackageRoot)uno.winui.remotecontrol\4.4.20\buildTransitive\Uno.WinUI.RemoteControl.targets')" />
-  </ImportGroup>
-  <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-maccatalyst' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)uno.sourcegenerationtasks\4.1.0\build\netstandard1.0\Uno.SourceGenerationTasks.targets" Condition="Exists('$(NuGetPackageRoot)uno.sourcegenerationtasks\4.1.0\build\netstandard1.0\Uno.SourceGenerationTasks.targets')" />
-    <Import Project="$(NuGetPackageRoot)uno.winui\4.4.20\buildTransitive\net6.0-maccatalyst\uno.winui.targets" Condition="Exists('$(NuGetPackageRoot)uno.winui\4.4.20\buildTransitive\net6.0-maccatalyst\uno.winui.targets')" />
-    <Import Project="$(NuGetPackageRoot)uno.winui.remotecontrol\4.4.20\buildTransitive\Uno.WinUI.RemoteControl.targets" Condition="Exists('$(NuGetPackageRoot)uno.winui.remotecontrol\4.4.20\buildTransitive\Uno.WinUI.RemoteControl.targets')" />
-  </ImportGroup>
-  <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-macos' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)uno.sourcegenerationtasks\4.1.0\build\netstandard1.0\Uno.SourceGenerationTasks.targets" Condition="Exists('$(NuGetPackageRoot)uno.sourcegenerationtasks\4.1.0\build\netstandard1.0\Uno.SourceGenerationTasks.targets')" />
-    <Import Project="$(NuGetPackageRoot)uno.winui\4.4.20\buildTransitive\net6.0-macos\uno.winui.targets" Condition="Exists('$(NuGetPackageRoot)uno.winui\4.4.20\buildTransitive\net6.0-macos\uno.winui.targets')" />
-    <Import Project="$(NuGetPackageRoot)uno.winui.remotecontrol\4.4.20\buildTransitive\Uno.WinUI.RemoteControl.targets" Condition="Exists('$(NuGetPackageRoot)uno.winui.remotecontrol\4.4.20\buildTransitive\Uno.WinUI.RemoteControl.targets')" />
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net7.0-ios' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)uno.sourcegenerationtasks\4.2.0-dev.6\build\netstandard1.0\Uno.SourceGenerationTasks.targets" Condition="Exists('$(NuGetPackageRoot)uno.sourcegenerationtasks\4.2.0-dev.6\build\netstandard1.0\Uno.SourceGenerationTasks.targets')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui\4.6.19\buildTransitive\net7.0-ios\uno.winui.targets" Condition="Exists('$(NuGetPackageRoot)uno.winui\4.6.19\buildTransitive\net7.0-ios\uno.winui.targets')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.remotecontrol\4.6.19\buildTransitive\Uno.WinUI.RemoteControl.targets" Condition="Exists('$(NuGetPackageRoot)uno.winui.remotecontrol\4.6.19\buildTransitive\Uno.WinUI.RemoteControl.targets')" />
   </ImportGroup>
 </Project>

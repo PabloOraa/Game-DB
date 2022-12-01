@@ -14,10 +14,10 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)uno.winui.skia.gtk\4.4.20\build\Uno.WinUI.Skia.Gtk.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.skia.gtk\4.4.20\build\Uno.WinUI.Skia.Gtk.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.skia.gtk\4.6.19\build\Uno.WinUI.Skia.Gtk.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.skia.gtk\4.6.19\build\Uno.WinUI.Skia.Gtk.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui\4.4.20</PkgUno_WinUI>
-    <PkgUno_WinUI_RemoteControl Condition=" '$(PkgUno_WinUI_RemoteControl)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui.remotecontrol\4.4.20</PkgUno_WinUI_RemoteControl>
+    <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui\4.6.19</PkgUno_WinUI>
+    <PkgUno_WinUI_RemoteControl Condition=" '$(PkgUno_WinUI_RemoteControl)' == '' ">C:\Users\pabli\.nuget\packages\uno.winui.remotecontrol\4.6.19</PkgUno_WinUI_RemoteControl>
   </PropertyGroup>
 </Project>

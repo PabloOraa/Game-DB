@@ -19,7 +19,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyTitleAttribute("GameDB.Mobile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("MacCatalyst15.4")]
-[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("MacCatalyst14.0")]
+[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("MacCatalyst15.4")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
 

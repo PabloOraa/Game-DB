@@ -31,7 +31,7 @@
           "https://api.nuget.org/v3/index.json": {},
           "https://pkgs.dev.azure.com/azure-public/vside/_packaging/xamarin-impl/nuget/v3/index.json": {},
           "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet6/nuget/v3/index.json": {}
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet7/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -51,23 +51,23 @@
           "dependencies": {
             "Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[4.4.20, )"
+              "version": "[4.6.19, )"
             },
             "Uno.WinUI.RemoteControl": {
               "target": "Package",
-              "version": "[4.4.20, )"
+              "version": "[4.6.19, )"
             },
             "Uno.WinUI.Skia.Gtk": {
               "target": "Package",
-              "version": "[4.4.20, )"
+              "version": "[4.6.19, )"
             }
           },
           "imports": [

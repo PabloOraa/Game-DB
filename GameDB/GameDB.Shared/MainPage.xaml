@@ -7,8 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
-        <TextBlock x:Name="textBlock" Text="Hello, world!" Margin="20" FontSize="30" />
-        <Button Content="Convert JSON" Click="Button_Click"></Button>
-    </Grid>
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock x:Name="textBlock" Text="When you click the button, the number of results will appear here" Margin="20" FontSize="30" />
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBox x:Name="nameSearch" PlaceholderText="Final Fantasy" Height="40" Width="200" HorizontalAlignment="Left" Margin="0,0,0,20"/>
+            <Button Content="Convert JSON" Click="Button_Click"></Button>
+        </StackPanel>
+    </StackPanel>
 </Page>

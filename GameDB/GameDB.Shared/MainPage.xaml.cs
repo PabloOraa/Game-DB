@@ -30,8 +30,9 @@ namespace GameDB
         public async void getProducts()
         {
             List<Wrapper_MsStore>? msStoreResultList = new List<Wrapper_MsStore>();
-            var searchTerm = "Final Fantasy";
-            HttpResponseMessage response = await new HttpClient().GetAsync("https://storeedgefd.dsx.mp.microsoft.com/v9.0/pages/searchResults?appVersion=22203.1401.0.0&market=US&locale=en-US&deviceFamily=windows.desktop&query="+ HttpUtility.UrlEncode(searchTerm));
+            var searchTerm = nameSearch.Text;
+            var url = "https://storeedgefd.dsx.mp.microsoft.com/v9.0/pages/searchResults?appVersion=22203.1401.0.0&market=US&locale=en-US&deviceFamily=windows.desktop&query=" + HttpUtility.UrlEncode(searchTerm);
+            HttpResponseMessage response = await new HttpClient().GetAsync(url);
             if (response.IsSuccessStatusCode)
             {
                 string text = await response.Content.ReadAsStringAsync();

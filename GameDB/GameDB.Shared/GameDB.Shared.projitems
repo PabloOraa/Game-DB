@@ -19,9 +19,11 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Enums\DeviceFamily.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IImageLoader.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ImageLoaderService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Wrapper\Wrapper_MsStore.cs" />
   </ItemGroup>
   <ItemGroup>

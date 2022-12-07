@@ -1,22 +1,20 @@
 ﻿using GameDB.Enums;
+using GameDB.Interfaces;
+using GameDB.Services;
 using GameDB.Wrapper;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media.Imaging;
 using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
 using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using System.Threading.Tasks;
 using System.Web;
-using Windows.Storage.Streams;
-using Windows.System;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+using Windows.ApplicationModel.Core;
+using Windows.UI.Core;
 
 namespace GameDB
 {
@@ -26,6 +24,8 @@ namespace GameDB
     public sealed partial class MainPage : Page
     {
         private string Family { get; set; }
+        private readonly IImageLoader imageLoader;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -33,7 +33,9 @@ namespace GameDB
             {
                 platforms.Items.Add(platform);
             }
+            Family = "";
             platforms.SelectedIndex = 0;
+            imageLoader = new ImageLoaderService();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -76,23 +78,9 @@ namespace GameDB
             textBlock.Text = $"Encontrados {msStoreResultsFiltered.Count} resultados en la búsqueda de {searchTerm}";
             if(msStoreResultsFiltered.Count == 1)
             {
-                var imgUrl = new Uri(msStoreResultsFiltered[0].Previews[0].Url);
-                var responseIm = await new HttpClient().GetAsync(imgUrl);
-                byte[] img = await responseIm.Content.ReadAsByteArrayAsync();
-
-                InMemoryRandomAccessStream randomAccessStream = new();
-
-                DataWriter writer = new(randomAccessStream.GetOutputStreamAt(0));
-
-                writer.WriteBytes(img);
-
-                await writer.StoreAsync();
-
-                BitmapImage b = new();
-
-                b.SetSource(randomAccessStream);
-                backgroundImage.ImageSource = b;
                 mainWindow.Height = ActualHeight;
+                var b = await imageLoader.ImageLoader(msStoreResultsFiltered[0].Previews[0].Url);
+                backgroundImage.ImageSource = b;
             }
         }
 

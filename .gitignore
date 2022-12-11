@@ -361,5 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/.vs/GameDB/v17/.futdcache.v2
 /.vs/GameDB/DesignTimeBuild/.dtbcache.v2
 /.vs/GameDB/v17/.suo

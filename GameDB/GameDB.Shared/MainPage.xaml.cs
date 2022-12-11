@@ -64,10 +64,12 @@ namespace GameDB
             textBlock.Text = $"Encontrados {steamResultListing.Count} resultados en la búsqueda de {searchTerm} en Steam";
             if(steamResultListing.Count > 0)
             {
+                SteamListing selectedListing = steamResultListing[0];
+                SteamDetails details = await QuerySteam.GetDetails(selectedListing.AppId);
                 mainWindow.Height = ActualHeight;
-                var b = await imageLoader.ImageLoader(steamResultListing[0].ImageLink);
+                var b = await imageLoader.ImageLoader(details.ContentData.BackgroundUrl);
                 backgroundImage.ImageSource = b;
-                textBlock.Text = $"Encontrados {steamResultListing.Count} resultados en la búsqueda de {searchTerm} en Steam : {steamResultListing[0].Name}->{steamResultListing[0].AppId}";
+                textBlock.Text = $"Encontrados {steamResultListing.Count} resultados en la búsqueda de {searchTerm} en Steam con Resultado de Metacritic: {details.ContentData.MetacriticValue.Score}";
             }
         }
 

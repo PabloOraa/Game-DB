@@ -7,6 +7,8 @@ using System.Security.Policy;
 using System.Text;
 using System.Globalization;
 using System.Threading.Tasks;
+using System.Drawing;
+using System.Text.Json;
 
 namespace GameDB.Query.Steam;
 
@@ -35,5 +37,26 @@ class SteamQuery
         }
 
         return results;
+    }
+
+    public async Task<SteamDetails> GetDetails(string appId)
+    {
+        SteamDetails result = new();
+        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+        var stringUrl = $"https://store.steampowered.com/api/appdetails?appids={appId}";
+        HttpResponseMessage response = await new HttpClient().GetAsync(stringUrl);
+
+        if (response.IsSuccessStatusCode)
+        {
+            var responseString = await response.Content.ReadAsStringAsync();
+            responseString = responseString[responseString.IndexOf('{', 1)..];
+            responseString = responseString[..(responseString.Length - 1)];
+            if (responseString is not null)
+            {
+                result = JsonSerializer.Deserialize<SteamDetails>(responseString);
+            }
+        }
+
+        return result;
     }
 }

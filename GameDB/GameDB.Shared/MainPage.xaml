@@ -15,7 +15,8 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
                 <TextBox x:Name="nameSearch" PlaceholderText="Final Fantasy" Height="40" Width="200" HorizontalAlignment="Left" Margin="0,0,0,20"/>
-                <Button Content="Convert JSON" Click="Button_Click"></Button>
+                <Button Content="Convert JSON MSStore" Click="ButtonMS_Click"></Button>
+                <Button Content="Convert JSON Steam" Click="ButtonSteam_Click"></Button>
             </StackPanel>
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
                 <ComboBox x:Name="platforms" SelectionChanged="ComboBox_SelectionChanged" Header="Platform" PlaceholderText="Select a platform">

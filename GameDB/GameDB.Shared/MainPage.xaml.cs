@@ -1,5 +1,8 @@
-﻿using GameDB.Enums;
+﻿using GameDB.Classes.Steam;
+using GameDB.Enums;
 using GameDB.Interfaces;
+using GameDB.Query.MsStore;
+using GameDB.Query.Steam;
 using GameDB.Services;
 using GameDB.Wrapper;
 using Microsoft.UI.Xaml;
@@ -23,7 +26,8 @@ namespace GameDB
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private string Family { get; set; }
+        private MsStoreQuery QueryMS { get; set; }
+        private SteamQuery QuerySteam { get; set; }
         private readonly IImageLoader imageLoader;
 
         public MainPage()
@@ -33,50 +37,52 @@ namespace GameDB
             {
                 platforms.Items.Add(platform);
             }
-            Family = "";
+            QueryMS = new("");
+            QuerySteam = new();
             platforms.SelectedIndex = 0;
             imageLoader = new ImageLoaderService();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonMS_Click(object sender, RoutedEventArgs e)
         {
             getProducts();
         }
 
-        public async void getProducts()
+        private void ButtonSteam_Click(object sender, RoutedEventArgs e)
         {
-            List<Wrapper_MsStore>? msStoreResultList = new ();
+            getProductsSteam();
+        }
+
+        public async void getProductsSteam()
+        {
+            
             var searchTerm = nameSearch.Text;
             var region = System.Threading.Thread.CurrentThread.CurrentUICulture;
-            var url = $"https://storeedgefd.dsx.mp.microsoft.com/v9.0/pages/searchResults?appVersion=22203.1401.0.0&market={region.TwoLetterISOLanguageName.ToUpper()}&locale={region.IetfLanguageTag}&deviceFamily={Family}&query={HttpUtility.UrlEncode(searchTerm)}";
-            HttpResponseMessage response = await new HttpClient().GetAsync(url);
-            if (response.IsSuccessStatusCode)
-            {
-                string text = await response.Content.ReadAsStringAsync();
-                if(text != null)
-                {
-                    JsonNode? jsonResult = JsonNode.Parse(text);
-                    msStoreResultList.AddRange(collection: from JsonNode jsonNode in jsonResult!.AsArray()
-                                               let msStoreResults = JsonSerializer.Deserialize<Wrapper_MsStore>(jsonNode)
-                                               where msStoreResults?.Payload.SearchResults != null
-                                               select msStoreResults);
-                }
-            }
 
-            List<SearchResults> msStoreResultsFiltered = new();
-            foreach(var result in msStoreResultList)
+            List<SteamListing> steamResultListing = await QuerySteam.Search(searchTerm, region);
+
+            textBlock.Text = $"Encontrados {steamResultListing.Count} resultados en la búsqueda de {searchTerm} en Steam";
+            if(steamResultListing.Count > 0)
             {
-                foreach(var msStoreResult in result.Payload.SearchResults) 
-                {
-                    if(msStoreResult.Title.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) || msStoreResult.LongDescription.Contains(searchTerm,StringComparison.OrdinalIgnoreCase))
-                    {
-                        msStoreResultsFiltered.Add(msStoreResult);
-                    }
-                }
+                mainWindow.Height = ActualHeight;
+                var b = await imageLoader.ImageLoader(steamResultListing[0].ImageLink);
+                backgroundImage.ImageSource = b;
+                textBlock.Text = $"Encontrados {steamResultListing.Count} resultados en la búsqueda de {searchTerm} en Steam : {steamResultListing[0].Name}->{steamResultListing[0].AppId}";
             }
+        }
+
+        public async void getProducts()
+        {
+
+            var searchTerm = nameSearch.Text;
+            var region = System.Threading.Thread.CurrentThread.CurrentUICulture;
+
+            List<MsStoreListing> msStoreResultList = await QueryMS.Search(searchTerm, region);
+
+            List<SearchResults> msStoreResultsFiltered = await QueryMS.Filter(searchTerm, msStoreResultList);
 
             textBlock.Text = $"Encontrados {msStoreResultsFiltered.Count} resultados en la búsqueda de {searchTerm}";
-            if(msStoreResultsFiltered.Count == 1)
+            if (msStoreResultsFiltered.Count == 1)
             {
                 mainWindow.Height = ActualHeight;
                 var b = await imageLoader.ImageLoader(msStoreResultsFiltered[0].Previews[0].Url);
@@ -86,18 +92,9 @@ namespace GameDB
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ComboBox combo = (ComboBox)sender; 
+            ComboBox combo = (ComboBox)sender;
 
-            Family = combo.SelectedItem switch
-            {
-                DeviceFamily.Desktop => "windows.desktop",
-                DeviceFamily.Mobile => "windows.mobile",
-                DeviceFamily.Hololens => "windows.holographic",
-                DeviceFamily.Hub => "windows.team",
-                DeviceFamily.Xbox => "windows.xbox",
-                DeviceFamily.IoT => "windows.iot",
-                _ => "windows.desktop",
-            };
+            QueryMS.SetNewFamily(combo.SelectedItem);
         }
     }
 }

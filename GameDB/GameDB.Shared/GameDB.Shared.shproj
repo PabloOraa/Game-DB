@@ -11,7 +11,11 @@
   <Import Project="GameDB.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.CSharp.targets" />
   <ItemGroup>
+    <_Globbed_Compile Remove="Classes\Steam\SteamListing.cs" />
+    <_Globbed_Compile Remove="Enums\SteamType.cs" />
     <_Globbed_Compile Remove="Enum\DeviceFamily.cs" />
     <_Globbed_Compile Remove="Interfaces\IImageLoader.cs" />
+    <_Globbed_Compile Remove="Query\MsStore\MsStoreQuery.cs" />
+    <_Globbed_Compile Remove="Query\Steam\SteamQuery.cs" />
   </ItemGroup>
 </Project>

@@ -18,13 +18,17 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Steam\SteamListing.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums\DeviceFamily.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\SteamType.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IImageLoader.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Query\MsStore\MsStoreQuery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Query\Steam\SteamQuery.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\ImageLoaderService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Wrapper\Wrapper_MsStore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\MsStore\MsStoreListing.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
@@ -63,5 +67,8 @@
     <ApplicationDefinition Update="$(MSBuildThisFileDirectory)**/*.xaml" XamlRuntime="WinUI" />
     <!-- Make sure XAML files force reevaluation of up-to-date checks -->
     <UpToDateCheckInput Include="$(MSBuildThisFileDirectory)**/*.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Classes\MsStore\" />
   </ItemGroup>
 </Project>

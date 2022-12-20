@@ -44,7 +44,6 @@ namespace GameDB
         public async void getProducts()
         {
             var searchTerm = nameSearch.Text;
-            //var region = System.Threading.Thread.CurrentThread.CurrentUICulture;
 
             GOGListing gogResults = await QueryGog.SearchAsync(searchTerm);
 

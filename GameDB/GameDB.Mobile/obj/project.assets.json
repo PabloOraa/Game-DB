@@ -9139,7 +9139,7 @@
         }
       }
     },
-    "net7.0-ios16.0": {
+    "net7.0-ios16.1": {
       "CommonServiceLocator/2.0.5": {
         "type": "package",
         "compile": {
@@ -9599,7 +9599,7 @@
         }
       }
     },
-    "net7.0-ios16.0/android-arm": {
+    "net7.0-ios16.1/android-arm": {
       "CommonServiceLocator/2.0.5": {
         "type": "package",
         "compile": {
@@ -10059,7 +10059,7 @@
         }
       }
     },
-    "net7.0-ios16.0/android-arm64": {
+    "net7.0-ios16.1/android-arm64": {
       "CommonServiceLocator/2.0.5": {
         "type": "package",
         "compile": {
@@ -10519,7 +10519,7 @@
         }
       }
     },
-    "net7.0-ios16.0/android-x64": {
+    "net7.0-ios16.1/android-x64": {
       "CommonServiceLocator/2.0.5": {
         "type": "package",
         "compile": {
@@ -10979,7 +10979,7 @@
         }
       }
     },
-    "net7.0-ios16.0/android-x86": {
+    "net7.0-ios16.1/android-x86": {
       "CommonServiceLocator/2.0.5": {
         "type": "package",
         "compile": {
@@ -11439,7 +11439,7 @@
         }
       }
     },
-    "net7.0-ios16.0/iossimulator-x64": {
+    "net7.0-ios16.1/iossimulator-x64": {
       "CommonServiceLocator/2.0.5": {
         "type": "package",
         "compile": {
@@ -15177,7 +15177,7 @@
       "Uno.WinUI.RemoteControl >= 4.6.19",
       "Xamarin.Google.Android.Material >= 1.4.0.4"
     ],
-    "net7.0-ios16.0": [
+    "net7.0-ios16.1": [
       "Microsoft.Extensions.Logging >= 5.0.0",
       "Microsoft.Extensions.Logging.Console >= 5.0.0",
       "Uno.Extensions.Logging.OSLog >= 1.4.0",
@@ -15227,7 +15227,7 @@
           "targetAlias": "net7.0-android",
           "projectReferences": {}
         },
-        "net7.0-ios16.0": {
+        "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
           "projectReferences": {}
         }
@@ -15290,9 +15290,9 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       },
-      "net7.0-ios16.0": {
+      "net7.0-ios16.1": {
         "targetAlias": "net7.0-ios",
         "dependencies": {
           "Microsoft.Extensions.Logging": {
@@ -15339,7 +15339,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

@@ -8,7 +8,16 @@
     mc:Ignorable="d"    
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
-    </Grid>
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="mainWindow">
+        <StackPanel.Background>
+            <ImageBrush x:Name="backgroundImage"></ImageBrush>
+        </StackPanel.Background>
+        <TextBlock x:Name="textBlock" Text="When you click the button, the number of results will appear here" Margin="20" FontSize="30" />
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+                <TextBox x:Name="nameSearch" PlaceholderText="Final Fantasy" Height="40" Width="200" HorizontalAlignment="Left" Margin="0,0,0,20"/>
+                <Button Content="Convert JSON GOG" Click="Button_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
 </Page>

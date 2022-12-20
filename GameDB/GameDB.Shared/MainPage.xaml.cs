@@ -1,4 +1,8 @@
-﻿using Microsoft.UI.Xaml;
+﻿using GameDB.Classes.GOG;
+using GameDB.Interfaces;
+using GameDB.Query.GOG;
+using GameDB.Services;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Data;
@@ -22,9 +26,35 @@ namespace GameDB
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private GOGQuery QueryGog { get; set; }
+        private readonly IImageLoader imageLoader;
+
         public MainPage()
         {
             this.InitializeComponent();
+            QueryGog = new();
+            imageLoader = new ImageLoaderService();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            getProducts();
+        }
+
+        public async void getProducts()
+        {
+            var searchTerm = nameSearch.Text;
+            //var region = System.Threading.Thread.CurrentThread.CurrentUICulture;
+
+            GOGListing gogResults = await QueryGog.SearchAsync(searchTerm);
+
+            textBlock.Text = $"Encontrados {gogResults.TotalGamesFound} resultados en la búsqueda de {searchTerm}";
+            if (gogResults.ProductList.Count > 1 && gogResults.ProductList[0].ImageUrl is not null)
+            {
+                mainWindow.Height = ActualHeight;
+                var b = await imageLoader.ImageLoader(gogResults.ProductList[0].ImageUrl);
+                backgroundImage.ImageSource = b;
+            }
         }
     }
 }

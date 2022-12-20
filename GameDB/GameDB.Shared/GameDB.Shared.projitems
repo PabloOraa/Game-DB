@@ -18,10 +18,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\GOG\GOGListing.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IImageLoader.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Query\GOG\GOGQuery.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\ImageLoaderService.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,7 +66,5 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Enums\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Classes\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Query\" />
   </ItemGroup>
 </Project>
